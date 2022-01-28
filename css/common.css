@@ -60,3 +60,13 @@ ul { list-style: none; }
     height: 100%;
     background-color: rgb(72, 25, 241);
 }
+
+/* 테블릿: 767px 이상*/
+@media all and (min-width:767px){
+
+}
+
+/* pc: 1024px 이상 */
+@media all and (min-width:1024px){ 
+
+}

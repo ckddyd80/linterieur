@@ -1,5 +1,7 @@
 @charset "UTF-8";
 
+/* 모바일 */
+
 #main_content {
     margin: 0;
     padding: 0;
@@ -156,3 +158,15 @@
 }
 
 
+/* 테블릿: 767px 이상*/
+@media all and (min-width:767px){
+    section {
+        max-width: 1440px;
+        margin: 0 auto;
+    }
+}
+
+/* pc: 1024px 이상 */
+@media all and (min-width:1024px){ 
+
+}
