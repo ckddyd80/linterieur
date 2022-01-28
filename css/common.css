@@ -23,6 +23,11 @@ ul { list-style: none; }
     width: 200px;
     height: 100%;
 }
+#main_header .logo  h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 #main_header .menu {
     float: left;
     background-color: tomato;

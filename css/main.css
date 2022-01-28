@@ -16,7 +16,6 @@
     display: flex;
     width: 100%;
     height: 100px;
-    flex: 1 1 auto;
 }
 #main_content > #fore_img .img_background .img1 {
     width: 25%;
