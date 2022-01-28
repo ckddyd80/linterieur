@@ -17,6 +17,7 @@
     background-color: darkgreen;
 }
 #main_content > #fore_img {
+    width: 100%;
 }
 #main_content > #fore_img .img_background {
     background-color: gray;
@@ -25,7 +26,7 @@
     height: 100px;
 }
 #main_content > #fore_img .img_background .img1 {
-    width: 25%;
+    width: 100%;
     background-color: rgb(195, 236, 12);
     height: 100%;
 }

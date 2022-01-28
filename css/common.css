@@ -19,20 +19,25 @@ ul { list-style: none; }
 }
 #main_header .logo {
     float: left;
-    background-color: yellow;
     width: 200px;
     height: 100%;
-}
-#main_header .logo  h1 {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-#main_header .menu {
+#main_header .nav {
     float: left;
     background-color: tomato;
     width: calc(100% - 400px);
     height: 100%;
+    display: flex;
+}
+#main_header .nav .gnb > li {
+    float: left;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 #main_header .main_icon {
     float: right;
