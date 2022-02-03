@@ -174,12 +174,57 @@
     background-color: gold;
 }
 
+#main_content > #m_swiper > #icon_back .icon_4 {
+    display: none;
+}
+#main_content > #m_swiper > #icon_back .icon_5 {
+    display: none;
+}
+
+#main_content > #mm_nav > #modem .modem_text {
+    display: none;
+}
+#main_content > #mm_nav  > #modem .modem_img {
+    width: 100%;
+}
+#main_content > #m_swiper > #img_back .three_img {
+    width: 100%;
+}
+#main_content > #m_swiper > #img_back .three_img .k_img {
+    height: 100%;
+}
+#main_content > #m_swiper > #img_back .three_img .two_img {
+    display: none;
+}
+#main_content > #m_swiper > #img_back > .light_img {
+    display: none;
+}
+
 
 /* 테블릿: 767px 이상*/
 @media all and (min-width:767px){
     section {
         max-width: 1440px;
         margin: 0 auto;
+    }
+
+    #main_content > #m_swiper > #icon_back .icon_4 {
+        display: block;
+    }
+    #main_content > #m_swiper > #icon_back .icon_5 {
+        display: block;
+    }
+    #main_content > #mm_nav > #modem .modem_text {
+        display: block;
+    }
+    #main_content > #m_swiper > #img_back .three_img .two_img {
+        display: block;
+    }
+    #main_content > #m_swiper > #img_back > .light_img {
+        display: block;
+    }
+    #main_content > #m_swiper > #img_back .three_img .k_img {
+        height: 250px;
     }
 }
 
