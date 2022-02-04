@@ -49,14 +49,18 @@
     width: 100%;
     height: 500px;
 }
-#main_content > #mm_nav > #m_nav {
+#main_content > #mm_nav > .m_nav {
     height: 100px;
-}
-#main_content > #mm_nav .nav_gnb {
-    width: 400px;
-    float: right;
     background-color: rgb(245, 21, 21);
+}
+#main_content > #mm_nav > .m_nav .nav_gnb {
+    float: right;
     height: 100%;
+    display: flex;
+}
+#main_content > #mm_nav > .m_nav .nav_gnb > li {
+    overflow: hidden;
+    padding: 30px 10px;
 }
 #main_content > #mm_nav > #modem {
     width: 100%;
