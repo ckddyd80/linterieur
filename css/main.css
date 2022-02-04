@@ -54,7 +54,6 @@
     background-color: rgb(245, 21, 21);
 }
 #main_content > #mm_nav > .m_nav .nav_gnb {
-    float: right;
     height: 100%;
     display: flex;
 }
@@ -70,13 +69,11 @@
 #main_content > #mm_nav  > #modem .modem_img {
     width: 65%;
     height: 100%;
-    float: left;
     background-color: turquoise;
 }
 #main_content > #mm_nav > #modem .modem_text {
     width: 35%;
     height: 100%;
-    float: right;
     background-color: yellowgreen;
 }
 #main_content > #m_swiper {
@@ -149,19 +146,16 @@
     width: 50%;
     height: 100%;
     background-color: cornflowerblue;
-    float: left;
 }
 #main_content > #m_swiper > #img_back .three_img .two_img .chair_img {
     width:50%;
     height: 100%;
     background-color: darkgreen;
-    float: left;
 }
 #main_content > #m_swiper > #img_back > .light_img {
     width: 30%;
     height: 100%;
     background-color: darkorchid;
-    float: left;
 }
 #main_content > #show {
     width: 100%;
@@ -222,7 +216,7 @@
         display: block;
     }
     #main_content > #m_swiper > #img_back .three_img .two_img {
-        display: block;
+        display: flex;
     }
     #main_content > #m_swiper > #img_back > .light_img {
         display: block;

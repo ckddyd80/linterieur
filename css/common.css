@@ -8,11 +8,12 @@ a { text-decoration: none !important; }
 img { border: 0; }
 ul { list-style: none; }
 
-/* 0~319 */
+/* 0~766 */
 
 #main_header {
     margin: 0;
     padding: 0;
+    background-color: turquoise;
 }
 #main_header .container {
     width: 100%;
@@ -26,7 +27,6 @@ ul { list-style: none; }
     display: flex;
 } */
 #main_header .logo {
-    float: left;
     width: 200px;
     height: 100%;
     display: flex;
@@ -43,7 +43,6 @@ ul { list-style: none; }
     display: flex;
 }
 #main_header .nav .gnb > li {
-    overflow: hidden;
     padding: 30px 10px;
 }
 /* #main_header .lnb_container .lnb {
@@ -51,14 +50,12 @@ ul { list-style: none; }
     padding: 30px;
 } */
 #main_header .main_icon {
-    float: right;
     background-color: violet;
     width: 200px;
     height: 100%;
     display: flex;
 }
 #main_header .main_icon > a {
-    overflow: hidden;
     padding: 30px 5px;
 }
 #main_footer {
@@ -66,17 +63,16 @@ ul { list-style: none; }
     padding: 0;
 }
 #main_footer .footer_container {
+    display: flex;
     width: 100%;
     height: 100px;
 }
 #main_footer .com {
-    float: left;
     width: 70%;
     height: 100%;
     background-color: darkgoldenrod;
 }
 #main_footer .number {
-    float: left;
     width: 30%;
     height: 100%;
     background-color: rgb(72, 25, 241);
@@ -98,6 +94,10 @@ ul { list-style: none; }
 
 /* 테블릿: 767px 이상*/
 @media all and (min-width:767px){
+    #main_header .container {
+        max-width: 1440px;
+    }
+
     #main_footer .com {
         width: 70%;
     }
