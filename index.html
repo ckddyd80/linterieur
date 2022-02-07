@@ -66,7 +66,7 @@
     <content id="main_content">
         <section id="main_benner">
             <!-- Swiper1 -->
-            <div class="swiper-container swiper">
+            <div class="swiper-container swiper1">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide slide1"></div>
                     <div class="swiper-slide slide2"></div>
@@ -79,10 +79,29 @@
                 <div class="swiper-pagination"></div>
             </div>
         </section>
-        <section class="in_text">텍스트</section>
+        <section class="in_text">
+            <p class="txt_01">
+                <p>다양한 라이프 스타일 속에서 최적화된 당신의 주거 공간을 디자인합니다.</p>
+                <p>가치있는 당신의 일상을 위한 취향에 딱 맞는 인테리어 디자인을 만나보세요.</p>
+            </p>
+                <a>Lifestyle design beyond material</a>
+        </section>
         <section id="fore_img">
             <div class="img_background">
-                <div class="img1">이미지1</div>
+                <!-- Swiper2 -->
+            <div class="swiper-container swiper2">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide slide11"></div>
+                    <div class="swiper-slide slide21"></div>
+                    <div class="swiper-slide slide31"></div>
+                    <div class="swiper-slide slide41"></div>
+                    <div class="swiper-slide slide51"></div>
+                    <div class="swiper-slide slide61"></div>
+                </div>
+            <!-- Add Arrows -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
             </div>
         </section>
         <section id="mm_nav">
@@ -95,39 +114,76 @@
                 </ul>
             </div>
             <div id="modem">
-                <div class="modem_img">모던이미지</div>
-                <div class="modem_text">모던텍스트</div>
+                <div class="modem_img">
+                    <div class="modern_img">
+                    </div>
+                </div>
+                <div class="modem_text">
+                    <p>Modern</p>
+                </div>
             </div>
         </section>
         <section id="m_swiper">
-            <div id="product_text">product_text</div>
+            <div id="product_text">Product Category</div>
             <div id="icon_back">
                 <div class="icon_all">
-                    <div class="icon_1">kitchen</div>
-                    <div class="icon_2">bedroom</div>
-                    <div class="icon_3">bath</div>
-                    <div class="icon_4">livingroom</div>
-                    <div class="icon_5">item</div>
+                    <div class="icon_1">
+                        <img src="./img/icon/icon1.PNG" alt="주방">
+                        <p>Kitchen</p>
+                    </div>
+                    <div class="icon_2">
+                        <img src="./img/icon/icon2.PNG" alt="욕실">
+                        <p>Bath</p>
+                    </div>
+                    <div class="icon_3">
+                        <img src="./img/icon/icon3.PNG" alt="중문">
+                        <p>Door</p>
+                    </div>
+                    <div class="icon_4">
+                        <img src="./img/icon/icon4.PNG" alt="몰딩">
+                        <p>Molding</p>
+                    </div>
+                    <div class="icon_5">
+                        <img src="./img/icon/icon5.PNG" alt="필름">
+                        <p>Film</p>
+                    </div>
                 </div> 
             </div>
             <div id="img_back">
                 <div class="three_img">
-                    <div class="k_img">인테리어이미지</div>
+                    <div class="k_img">
+                        <img src="./img/상품카테고리/pro_kitchen.jpg" alt="주방">
+                    </div>
                     <div class="two_img">
-                        <div class="table_img">테이블</div>
-                        <div class="chair_img">의자</div>
+                        <div class="table_img">
+                            <img src="./img/상품카테고리/pro_table.jpg" alt="테이블">
+                        </div>
+                        <div class="chair_img">
+                            <img src="./img/상품카테고리/pro_chair.jpg" alt="의자">
+                        </div>
                     </div>
                 </div>
-                <div class="light_img">조명</div>
+                <div class="light_img">
+                    <img src="./img/상품카테고리/pro_lighting.jpg" alt="조명">
+                </div>
             </div>
         </section>
         <section id="show">
-            <div id="show_text">show room</div>
-            <div id="show_img">슬라이더이미지(스와이퍼)
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
+            <div id="show_text">Show Room</div>
+            <div id="show_img">
+                <!-- Swiper1 -->
+            <div class="swiper-container swiper3">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide slide01"></div>
+                    <div class="swiper-slide slide02"></div>
+                    <div class="swiper-slide slide03"></div>
+                    <div class="swiper-slide slide04"></div>
+                </div>
+            <!-- Add Arrows -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+            </div>
             </div>
         </section>
     </content>
@@ -139,7 +195,7 @@
     </footer>
     <script src="./js/swiper.min.js"></script>
     <script>
-        var swiper = new Swiper('.swiper', {
+        var swiper = new Swiper('.swiper1', {
             navigation: {
                 nextEl: '.swiper-button-next',
                 prevEl: '.swiper-button-prev',
@@ -152,6 +208,31 @@
             },
             speed: 800,
         });
+        var swiper = new Swiper(".swiper2", {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        slidesPerGroup: 3,
+        loop: true,
+        loopFillGroupWithBlank: true,
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+    });
+        var swiper = new Swiper(".swiper3", {
+            pagination: {
+                el: ".swiper-pagination",
+                type: "fraction",
+        },
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+    });
     </script>
 </body>
 </html>
