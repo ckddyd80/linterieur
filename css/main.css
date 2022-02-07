@@ -57,168 +57,304 @@
     background-position:center;
 }
 
-
-
 #main_content .in_text {
     width: 100%;
-    height: 50px;
-    background-color: darkgreen;
+    height: 150px;
+    background-color: white;
+}
+
+#main_content .in_text .txt_01 {
+    margin: 80px;
+}
+#main_content .in_text > p {
+    padding: 0 100px;
+    font-size: 20px;
+}
+#main_content .in_text > a {
+    padding: 0 100px;
+    font-weight: 700;
+    margin-top: 12px;
+    font-size: 20px;
 }
 #main_content > #fore_img {
     width: 100%;
+    height: 500px;
 }
 #main_content > #fore_img .img_background {
-    background-color: gray;
     display: flex;
     width: 100%;
-    height: 100px;
+    height: 100%;
 }
-#main_content > #fore_img .img_background .img1 {
+#main_content > #fore_img .img_background > .swiper-container {
     width: 100%;
-    background-color: rgb(195, 236, 12);
     height: 100%;
 }
-#main_content > #fore_img .img_background .img2 {
-    width: 25%;
-    background-color: rgb(230, 48, 48);
-    height: 100%;
+
+#main_content > #fore_img .img_background > .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
 }
-#main_content > #fore_img .img_background .img3 {
-    width: 25%;
-    background-color: rgb(21, 24, 218);
-    height: 100%;
+
+
+#main_content > #fore_img .img_background .swiper-slide.slide11 {
+    background: url('../img/중상단_4개배너/first_bath.jpg');
+    background-size: cover;
+    background-position:center;
 }
-#main_content > #fore_img .img_background .img4 {
-    width: 25%;
-    background-color: rgb(59, 236, 15);
-    height: 100%;
+#main_content > #fore_img .img_background .swiper-slide.slide21 {
+    background: url('../img/중상단_4개배너/first_bedroom.jpg');
+    background-size: cover;
+    background-position:center;
+}
+#main_content > #fore_img .img_background .swiper-slide.slide31 {
+    background: url('../img/중상단_4개배너/first_kitchen.jpg');
+    background-size: cover;
+    background-position:center;
+}
+#main_content > #fore_img .img_background .swiper-slide.slide41 {
+    background: url('../img/중상단_4개배너/first_living.jpg');
+    background-size: cover;
+    background-position:center;
+}
+#main_content > #fore_img .img_background .swiper-slide.slide51 {
+    background: url('../img/중상단_4개배너/first_dress.jpg');
+    background-size: cover;
+    background-position:center;
+}
+#main_content > #fore_img .img_background .swiper-slide.slide61 {
+    background: url('../img/중상단_4개배너/first_study.jpg');
+    background-size: cover;
+    background-position:center;
 }
 #main_content > #mm_nav {
     width: 100%;
-    height: 500px;
+    height: 600px;
 }
 #main_content > #mm_nav > .m_nav {
     height: 100px;
-    background-color: rgb(245, 21, 21);
+    background-color: white;
 }
 #main_content > #mm_nav > .m_nav .nav_gnb {
-    height: 100%;
     display: flex;
     justify-content: flex-end;
     text-align: center;
 }
 #main_content > #mm_nav > .m_nav .nav_gnb > li {
-    padding: 30px 10px;
+    padding: 10px 10px;
+    list-style: none;
+    position: relative;
+    padding-top: 28px;
+}
+#main_content > #mm_nav > .m_nav .nav_gnb > li::after {
+    content:""; 
+    position: absolute; 
+    left: 50%; 
+    bottom: 0; 
+    width: 0; 
+    height: 3px; 
+    background-color: black; 
+    transition: all .5s;
+}
+#main_content > #mm_nav > .m_nav .nav_gnb > li::before {
+    content:""; 
+    position: absolute; 
+    right: 50%; 
+    bottom: 0; 
+    width: 0; 
+    height: 3px; 
+    background-color: black; 
+    transition: all .5s;
+}
+#main_content > #mm_nav > .m_nav .nav_gnb > li:hover:after { 
+    width: 50% 
+} 
+#main_content > #mm_nav > .m_nav .nav_gnb > li:hover:before {
+    width: 50% 
 }
 #main_content > #mm_nav > #modem {
     width: 100%;
-    height: 400px;
+    height: 500px;
     display: flex;
 }
 #main_content > #mm_nav  > #modem .modem_img {
     width: 65%;
     height: 100%;
-    background-color: turquoise;
+}
+#main_content > #mm_nav  > #modem .modem_img .modern_img {
+    background: url(../img/중간배너/seo_contemporary_FB.webp);
+    background-size: cover;
+    background-position:center;
+    width: 100%;
+    height: 100%;
 }
 #main_content > #mm_nav > #modem .modem_text {
     width: 35%;
     height: 100%;
-    background-color: yellowgreen;
+    background-color: white;
+}
+#main_content > #mm_nav > #modem .modem_text > p{
+    text-align: center;
+    margin-top: 180px;
+    font-size: 60px;
+    font-weight: 800;
 }
 #main_content > #m_swiper {
     width: 100%;
-    height: 680px;
+    height: 900px;
 }
 #main_content > #m_swiper >#product_text {
     width: 100%;
-    height: 80px;
-    background-color: wheat;
+    height: 50px;
+    background-color: white;
+    text-align: center;
+    font-size: 36px;
+    margin-top: 40px;
 }
 #main_content > #m_swiper > #icon_back {
     width: 100%;
-    height: 100px;
+    height: 150px;
+    margin: 0;
 }
 
 #main_content > #m_swiper > #icon_back .icon_all {
-    background-color: gray;
     width: 100%;
     height: 100%;
     display: flex;
     justify-content: center;
-    align-items: center;
+    text-align: center;
+    padding-top: 30px;
 }
-#main_content > #m_swiper > #icon_back .icon_all .icon_1 {
-    width: 50px;
+#main_content > #m_swiper > #icon_back .icon_al1 > p {
+    text-align: center;
+}
+#main_content > #m_swiper > #icon_back .icon_1 {
+    width: 100px;
     height: 50px;
-    background-color: rgb(243, 122, 101);
+    text-align: center;
 }
 #main_content > #m_swiper > #icon_back .icon_2 {
-    width: 50px;
+    width: 100px;
     height: 50px;
-    background-color: rgb(177, 245, 18);
+    text-align: center;
 }
 #main_content > #m_swiper > #icon_back .icon_3 {
-    width: 50px;
+    width: 100px;
     height: 50px;
-    background-color: rgb(38, 245, 11);
+    text-align: center;
 }
 #main_content > #m_swiper > #icon_back .icon_4 {
-    width: 50px;
+    width: 100px;
     height: 50px;
-    background-color: rgb(10, 130, 243);
+    text-align: center;
 }
 #main_content > #m_swiper > #icon_back .icon_5 {
-    width: 50px;
+    width: 100px;
     height: 50px;
-    background-color: rgb(217, 9, 245);
+    text-align: center;
 }
 #main_content > #m_swiper > #img_back {
     width: 100%;
-    height: 500px;
+    height: 700px;
     display: flex;
 }
 #main_content > #m_swiper > #img_back .three_img {
     width: 70%;
     height: 100%;
 }
-#main_content > #m_swiper > #img_back .three_img .k_img {
+#main_content > #m_swiper > #img_back .three_img .k_img > img{
     width: 100%;
-    height: 250px;
-    background-color: coral;
+    height: 100%;
 }
 #main_content > #m_swiper > #img_back .three_img .two_img {
     width: 100%;
-    height: 250px;
+    height: 350px;
     display: flex;
 }
-#main_content > #m_swiper > #img_back .three_img .two_img .table_img {
-    width: 50%;
+#main_content > #m_swiper > #img_back .three_img .two_img .table_img > img {
+    width: 100%;
     height: 100%;
-    background-color: cornflowerblue;
 }
-#main_content > #m_swiper > #img_back .three_img .two_img .chair_img {
-    width:50%;
+#main_content > #m_swiper > #img_back .three_img .two_img .chair_img > img {
+    width:100%;
     height: 100%;
-    background-color: darkgreen;
 }
-#main_content > #m_swiper > #img_back > .light_img {
-    width: 30%;
+#main_content > #m_swiper > #img_back > .light_img > img {
+    width: 100%;
     height: 100%;
-    background-color: darkorchid;
 }
 #main_content > #show {
     width: 100%;
-    height: 400px;
+    height: 640px;
 }
 #main_content > #show > #show_text {
     width: 100%;
     height: 100px;
-    background-color: deeppink;
+    text-align: center;
+    font-size: 40px;
+    padding-top: 40px;
 }
 #main_content > #show > #show_img {
     width: 100%;
-    height: 300px;
-    background-color: gold;
+    height: 500px;
+}
+#main_content > #show > #show_img > .swiper-container {
+    width: 100%;
+    height: 100%;
+}
+
+#main_content > #show > #show_img > .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+#main_content > #show > #show_img .swiper-slide.slide01 {
+    background: url('../img/쇼룸/showroom01.jpg');
+    background-size: cover;
+    background-position:center;
+}
+#main_content > #show > #show_img .swiper-slide.slide02 {
+    background: url('../img/쇼룸/showroom02.jpg');
+    background-size: cover;
+    background-position:center;
+}
+#main_content > #show > #show_img .swiper-slide.slide03 {
+    background: url('../img/쇼룸/showroom03.jpg');
+    background-size: cover;
+    background-position:center;
+}
+#main_content > #show > #show_img .swiper-slide.slide04 {
+    background: url('../img/쇼룸/showroom04.jpg');
+    background-size: cover;
+    background-position:center;
 }
 
 #main_content > #m_swiper > #icon_back .icon_4 {
@@ -271,7 +407,7 @@
         display: block;
     }
     #main_content > #m_swiper > #img_back .three_img .k_img {
-        height: 250px;
+        height: 350px;
     }
 }
 
