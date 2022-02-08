@@ -56,7 +56,7 @@
             </ul>
             <ul class="lnb">
                 <li>Seoul</li>
-                <li>Gyeonggi-do</li>
+                <li>Daejeon</li>
                 <li>Incheon</li>
                 <li>Busan</li>
                 <li>Gwangju</li>
@@ -91,12 +91,12 @@
                 <!-- Swiper2 -->
             <div class="swiper-container swiper2">
                 <div class="swiper-wrapper">
-                    <div class="swiper-slide slide11"></div>
-                    <div class="swiper-slide slide21"></div>
-                    <div class="swiper-slide slide31"></div>
-                    <div class="swiper-slide slide41"></div>
-                    <div class="swiper-slide slide51"></div>
-                    <div class="swiper-slide slide61"></div>
+                    <div class="swiper-slide slide11"><span>Bath</span></div>
+                    <div class="swiper-slide slide21"><span>Bedroom</span></div>
+                    <div class="swiper-slide slide31"><span>Kitchen</span></div>
+                    <div class="swiper-slide slide41"><span>Livingroom</span></div>
+                    <div class="swiper-slide slide51"><span>Dressroom</span></div>
+                    <div class="swiper-slide slide61"><span>Studyroom</span></div>
                 </div>
             <!-- Add Arrows -->
                 <div class="swiper-button-next"></div>
@@ -116,6 +116,12 @@
             <div id="modem">
                 <div class="modem_img">
                     <div class="modern_img">
+                        <img src="./img/중간배너/modern02.jpg" alt="모던" class="image">
+                        <div class="textbox">
+                            <div class="box_text">
+                                원룸부터 고급 주택까지 다양한 형태의 주거공간에 모두 잘 어울리는 모던 스타일을 만나 보세요.
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="modem_text">
@@ -189,7 +195,36 @@
     </content>
     <footer id="main_footer">
         <div class="footer_container">
-            <div class="com">com</div>
+            <div class="com">
+                <div class="footer_logo">
+                    <a href="#"><img src="./img/logo.jpg" alt="로고" class="img"></a>
+                </div>
+                <ul class="footer_info">
+                    <li>
+                        <span>상호명 : (주)인테리어</span>
+                        <span>대표이사 : 정우성</span>
+                        <span>주소 : 서울시 중구 남대문시장 10길 2 메사빌딩 5-6층</span>
+                    </li>
+                    <li>
+                        <span>사업자등록번호 : 120-00-00000</span>
+                        <span>통신 판매업 신고 : 2022-서울중구-2022</span>
+                        <span>개인정보보호책임자 : 이정재</span>
+                        <span>사업자정보확인</span>
+                    </li>
+                    <li>
+                        <span>호스팅제공자 : (주)대한민국</span>
+                        <span>e-mail : korea@naver.com</span>
+                        <span>에스크로서비스가입확인</span>
+                    </li>
+                </ul>
+                <p class="footer_copy">Copyright © 2022 SOUTH KOREA SEOUL Co., Ltd. All rights reserved</p>
+                <ul class="footer_sns">
+                    <li><a href="#" class="youtube"><i class="fab fa-youtube-square"></i></a>></li>
+                    <li><a href="#" class="instagram"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="#" class="facebook"><i class="fab fa-facebook-square"></i></a></li>
+                    <li><a href="#" class="twitter"><i class="fab fa-twitter-square"></i></a></li>
+                </ul>
+            </div>
             <div class="number">number</div>
         </div>
     </footer>
@@ -209,29 +244,59 @@
             speed: 800,
         });
         var swiper = new Swiper(".swiper2", {
-        slidesPerView: 3,
-        spaceBetween: 30,
-        slidesPerGroup: 3,
-        loop: true,
-        loopFillGroupWithBlank: true,
-        pagination: {
-            el: ".swiper-pagination",
-            clickable: true,
-        },
-        navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-        },
-    });
+            slidesPerView: 3,
+            spaceBetween: 30,
+            slidesPerGroup: 3,
+            loop: true,
+            loopFillGroupWithBlank: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            autoplay: {
+            delay: 3000,
+            },
+            speed: 800,
+            breakpointsInverse: true,
+            breakpoints: {
+                // when window width is >= 320px
+                0: {
+                    slidesPerView: 1,
+                    spaceBetween: 20
+                },
+                // when window width is >= 320px
+                320: {
+                slidesPerView: 1,
+                spaceBetween: 20
+                },
+                // when window width is >= 480px
+                480: {
+                slidesPerView: 2,
+                spaceBetween: 30
+                },
+                // when window width is >= 640px
+                640: {
+                slidesPerView: 3,
+                spaceBetween: 40
+                }
+            }
+        });
         var swiper = new Swiper(".swiper3", {
             pagination: {
                 el: ".swiper-pagination",
-                type: "fraction",
         },
         navigation: {
             nextEl: ".swiper-button-next",
             prevEl: ".swiper-button-prev",
         },
+        autoplay: {
+            delay: 3000,
+        },
+            speed: 800,
     });
     </script>
 </body>

@@ -10,12 +10,12 @@
     height: 800px;
 }
 
-#main_content > #main_benner > .swiper-container {
+#main_content > #main_benner  .swiper-container {
     width: 100%;
     height: 100%;
 }
 
-#main_content > #main_benner > .swiper-slide {
+#main_content > #main_benner  .swiper-slide {
     text-align: center;
     font-size: 18px;
     background: #fff;
@@ -88,12 +88,14 @@
 #main_content > #fore_img .img_background > .swiper-container {
     width: 100%;
     height: 100%;
+    color: rgb(221, 144, 144);
 }
 
-#main_content > #fore_img .img_background > .swiper-slide {
+#main_content > #fore_img .img_background .swiper-slide {
     text-align: center;
     font-size: 18px;
     background: #fff;
+    position: relative;
 
     /* Center slide text vertically */
     display: -webkit-box;
@@ -110,6 +112,13 @@
     align-items: center;
 }
 
+#main_content > #fore_img .img_background .swiper-slide span {
+    position: absolute;
+    top: 200px;
+    font-size: 46px;
+    font-weight: 800;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 
 #main_content > #fore_img .img_background .swiper-slide.slide11 {
     background: url('../img/중상단_4개배너/first_bath.jpg');
@@ -196,11 +205,40 @@
     height: 100%;
 }
 #main_content > #mm_nav  > #modem .modem_img .modern_img {
-    background: url(../img/중간배너/seo_contemporary_FB.webp);
-    background-size: cover;
-    background-position:center;
+    position: relative;
+}
+#main_content > #mm_nav  > #modem .modem_img .modern_img:hover .textbox {
+    opacity: 0.7;
+}
+#main_content > #mm_nav  > #modem .modem_img .modern_img > img {
     width: 100%;
+    height: 500px;
+    display: block;
+}
+#main_content > #mm_nav  > #modem .modem_img .modern_img .textbox {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
     height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgb(98, 100, 100);
+}
+#main_content > #mm_nav  > #modem .modem_img .modern_img .textbox .box_text {
+    color: rgb(250, 245, 245);
+    font-size: 24px;
+    font-weight: 800;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
 }
 #main_content > #mm_nav > #modem .modem_text {
     width: 35%;
@@ -247,25 +285,120 @@
     height: 50px;
     text-align: center;
 }
+#main_content > #m_swiper > #icon_back .icon_1 img {
+    -webkit-transform:scale(1);
+    -moz-transform:scale(1);
+    -ms-transform:scale(1); 
+    -o-transform:scale(1);  
+    transform:scale(1);
+    -webkit-transition:.3s;
+    -moz-transition:.3s;
+    -ms-transition:.3s;
+    -o-transition:.3s;
+    transition:.3s;
+}
+#main_content > #m_swiper > #icon_back .icon_1:hover img {
+    -webkit-transform:scale(1.2);
+    -moz-transform:scale(1.2);
+    -ms-transform:scale(1.2);   
+    -o-transform:scale(1.2);
+    transform:scale(1.2);
+}
 #main_content > #m_swiper > #icon_back .icon_2 {
     width: 100px;
     height: 50px;
     text-align: center;
+}
+#main_content > #m_swiper > #icon_back .icon_2 img {
+    -webkit-transform:scale(1);
+    -moz-transform:scale(1);
+    -ms-transform:scale(1); 
+    -o-transform:scale(1);  
+    transform:scale(1);
+    -webkit-transition:.3s;
+    -moz-transition:.3s;
+    -ms-transition:.3s;
+    -o-transition:.3s;
+    transition:.3s;
+}
+#main_content > #m_swiper > #icon_back .icon_2:hover img {
+    -webkit-transform:scale(1.2);
+    -moz-transform:scale(1.2);
+    -ms-transform:scale(1.2);   
+    -o-transform:scale(1.2);
+    transform:scale(1.2);
 }
 #main_content > #m_swiper > #icon_back .icon_3 {
     width: 100px;
     height: 50px;
     text-align: center;
 }
+#main_content > #m_swiper > #icon_back .icon_3 img {
+    -webkit-transform:scale(1);
+    -moz-transform:scale(1);
+    -ms-transform:scale(1); 
+    -o-transform:scale(1);  
+    transform:scale(1);
+    -webkit-transition:.3s;
+    -moz-transition:.3s;
+    -ms-transition:.3s;
+    -o-transition:.3s;
+    transition:.3s;
+}
+#main_content > #m_swiper > #icon_back .icon_3:hover img {
+    -webkit-transform:scale(1.2);
+    -moz-transform:scale(1.2);
+    -ms-transform:scale(1.2);   
+    -o-transform:scale(1.2);
+    transform:scale(1.2);
+}
 #main_content > #m_swiper > #icon_back .icon_4 {
     width: 100px;
     height: 50px;
     text-align: center;
 }
+#main_content > #m_swiper > #icon_back .icon_4 img {
+    -webkit-transform:scale(1);
+    -moz-transform:scale(1);
+    -ms-transform:scale(1); 
+    -o-transform:scale(1);  
+    transform:scale(1);
+    -webkit-transition:.3s;
+    -moz-transition:.3s;
+    -ms-transition:.3s;
+    -o-transition:.3s;
+    transition:.3s;
+}
+#main_content > #m_swiper > #icon_back .icon_4:hover img {
+    -webkit-transform:scale(1.2);
+    -moz-transform:scale(1.2);
+    -ms-transform:scale(1.2);   
+    -o-transform:scale(1.2);
+    transform:scale(1.2);
+}
 #main_content > #m_swiper > #icon_back .icon_5 {
     width: 100px;
     height: 50px;
     text-align: center;
+}
+#main_content > #m_swiper > #icon_back .icon_5 img {
+    -webkit-transform:scale(1);
+    -moz-transform:scale(1);
+    -ms-transform:scale(1); 
+    -o-transform:scale(1);  
+    transform:scale(1);
+    -webkit-transition:.3s;
+    -moz-transition:.3s;
+    -ms-transition:.3s;
+    -o-transition:.3s;
+    transition:.3s;
+}
+#main_content > #m_swiper > #icon_back .icon_5:hover img {
+    -webkit-transform:scale(1.2);
+    -moz-transform:scale(1.2);
+    -ms-transform:scale(1.2);   
+    -o-transform:scale(1.2);
+    transform:scale(1.2);
 }
 #main_content > #m_swiper > #img_back {
     width: 100%;
@@ -312,12 +445,12 @@
     width: 100%;
     height: 500px;
 }
-#main_content > #show > #show_img > .swiper-container {
+#main_content > #show > #show_img  .swiper-container {
     width: 100%;
     height: 100%;
 }
 
-#main_content > #show > #show_img > .swiper-slide {
+#main_content > #show > #show_img  .swiper-slide {
     text-align: center;
     font-size: 18px;
     background: #fff;
