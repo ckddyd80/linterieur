@@ -20,50 +20,59 @@
                 <ul class="gnb">
                     <li>
                         BRAND
-                        <!-- <div>
+                        <div class="gnb_sub">
                             <ul class="lnb">
                                 <li>History</li>
                                 <li>News</li>
                                 <li>Galley</li>
                             </ul>
-                        </div> -->
+                        </div>
                     </li>
-                    <li>PRODUCT</li>
-                    <li>SOLUTION</li>
-                    <li>SHOWROOM</li>
+                    <li>
+                        PRODUCT
+                        <div class="gnb_sub">
+                            <ul class="lnb">
+                                <li>Living</li>
+                                <li>Kitchen</li>
+                                <li>Bedroom</li>
+                                <li>Bath</li>
+                                <li>Itam</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        SOLUTION
+                        <div class="gnb_sub">
+                            <ul class="lnb">
+                                <li>Living</li>
+                                <li>Kitchen</li>
+                                <li>Bedroom</li>
+                                <li>Bath</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        SHOWROOM
+                        <div class="gnb_sub">
+                            <ul class="lnb">
+                                <li>Seoul</li>
+                                <li>Daejeon</li>
+                                <li>Incheon</li>
+                                <li>Busan</li>
+                                <li>Gwangju</li>
+                            </ul>
+                        </div>
+                    </li>
                 </ul>
             </div>
             <div class="main_icon">
-                <a href="#" class="seach"><i class="fas fa-search"></i></a>
-                <a href="#" class="heart"><i class="far fa-heart"></i></a>
-                <a href="#" class="user"><i class="far fa-user"></i></a>
+                    <a href="#" class="seach"><i class="fas fa-search"></i></a>
+                    <a href="#" class="heart"><i class="far fa-heart"></i></a>
+                    <a href="#" class="user"><i class="far fa-user"></i></a>
             </div>
         </div>
-        <!-- <div class="lnb_container">
-
-            <ul class="lnb">
-                <li>Living</li>
-                <li>Kitchen</li>
-                <li>Bedroom</li>
-                <li>Bath</li>
-                <li>Itam</li>
-            </ul>
-            <ul class="lnb">
-                <li>Living</li>
-                <li>Kitchen</li>
-                <li>Bedroom</li>
-                <li>Bath</li>
-            </ul>
-            <ul class="lnb">
-                <li>Seoul</li>
-                <li>Daejeon</li>
-                <li>Incheon</li>
-                <li>Busan</li>
-                <li>Gwangju</li>
-            </ul>
-        </div> -->
     </header>
-    <content id="main_content">
+    <div id="main_content">
         <section id="main_benner">
             <!-- Swiper1 -->
             <div class="swiper-container swiper1">
@@ -158,6 +167,10 @@
             <div id="img_back">
                 <div class="three_img">
                     <div class="k_img">
+                        <!-- <div class="row">
+                            <img id="pro_k_large" src="./img/상품카테고리/pro_kitchen.jpg" alt="" class="img-respons"/>
+                            <img id="pro_k_small" src="./img/상품카테고리/pro_kitchen_s .jpg" alt="" class="img-reponsive"/>
+                        </div> -->
                         <img src="./img/상품카테고리/pro_kitchen.jpg" alt="주방">
                     </div>
                     <div class="two_img">
@@ -192,7 +205,7 @@
             </div>
             </div>
         </section>
-    </content>
+    </div>
     <footer id="main_footer">
         <div class="footer_container">
             <div class="com">
@@ -219,13 +232,33 @@
                 </ul>
                 <p class="footer_copy">Copyright © 2022 SOUTH KOREA SEOUL Co., Ltd. All rights reserved</p>
                 <ul class="footer_sns">
-                    <li><a href="#" class="youtube"><i class="fab fa-youtube-square"></i></a>></li>
-                    <li><a href="#" class="instagram"><i class="fab fa-instagram"></i></a></li>
-                    <li><a href="#" class="facebook"><i class="fab fa-facebook-square"></i></a></li>
-                    <li><a href="#" class="twitter"><i class="fab fa-twitter-square"></i></a></li>
+                    <li><a href="#" class="youtube"><i class="fab fa-youtube-square" style="color: gray;"></i></a></li>
+                    <li><a href="#" class="instagram"><i class="fab fa-instagram"style="color: gray;"></i></a></li>
+                    <li><a href="#" class="facebook"><i class="fab fa-facebook-square"style="color: gray;"></i></a></li>
+                    <li><a href="#" class="twitter"><i class="fab fa-twitter-square"style="color: gray;"></i></a></li>
                 </ul>
             </div>
-            <div class="number">number</div>
+            <div class="number">
+                <div class="footer_cs_inner">
+                    <span class="footer_cs_name">고객문의 대표전화</span>
+                    <strong class="footer_cs_tel">1566-2580</strong>
+                </div>
+                <div class="footer_cs_inner">
+                    <span class="footer_cs_name">본사 A/S 전화</span>
+                    <strong class="footer_cs_tel">1588-2580</strong>
+                </div>
+                <p class="footer_cs_tip">평일 09:00 ~ 18:00 (주말 및 공휴일 휴무</p>
+                <a>대리점 개설안내</a>
+                <ul class="footer_menu">
+                    <li>회사소개</li>
+                    <li>개인정보처리방침</li>
+                    <li>채용정보</li>
+                    <li>서비스이용약관</li>
+                    <li>입점문의</li>
+                    <li>위치정보서비스약관</li>
+                    <li>영상정보처리기기 운영관리방침</li>
+                </ul>
+            </div>
         </div>
     </footer>
     <script src="./js/swiper.min.js"></script>
@@ -289,15 +322,15 @@
             pagination: {
                 el: ".swiper-pagination",
         },
-        navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-        },
-        autoplay: {
-            delay: 3000,
-        },
-            speed: 800,
-    });
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            autoplay: {
+                delay: 3000,
+            },
+                speed: 800,
+        });
     </script>
 </body>
 </html>
