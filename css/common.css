@@ -23,11 +23,6 @@ ul { list-style: none; }
     display: flex;
     /* position: fixed; */
 }
-/* #main_header .lnb_container {
-    width: 100%;
-    height: 100px;
-    display: flex;
-} */
 #main_header .logo {
     width: 200px;
     height: 100%;
@@ -131,6 +126,7 @@ ul { list-style: none; }
 #main_header .main_icon {
     display: none;
 }
+
 
 /* 테블릿: 767px 이상*/
 @media all and (min-width:767px){
