@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./libarary/fontawesome-free-5.15.4-web/css/all.min.css">
     <link rel="stylesheet" href="./css/swiper.min.css">
+    <link rel="stylesheet" href="./css/animate.min.css">
 </head>
 <body>
     <header id="main_header">
@@ -59,18 +60,30 @@
                                 <li>Daejeon</li>
                                 <li>Incheon</li>
                                 <li>Busan</li>
-                                <li>Gwangju</li>
                             </ul>
                         </div>
                     </li>
                 </ul>
             </div>
-            
-            <div class="main_icon">
-                    <a href="#" class="seach"><i class="fas fa-search"></i></a>
-                    <a href="#" class="heart"><i class="far fa-heart"></i></a>
-                    <a href="#" class="user"><i class="far fa-user"></i></a>
+            <div class="trigger">
+                <a href="#" class="mobile hamburger"><i class="fas fa-bars fa-lg"></i></a>
+                <a href="#" class="mobile close"><i class="fas fa-times fa-lg"></i></a>
             </div>
+            <div class="main_icon">
+                <div>
+                    <button class="btn_link" onclick="location.href='https://yl.co.kr/'"><i class="fas fa-search"></i></button>
+                    <button class="btn_link"><i class="far fa-heart"></i></button>
+                    <button class="btn_link"><i class="far fa-user"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="mobile_menu animate__animated animate__backInDown">
+            <ul>
+                <li>BRAND</li>
+                <li>PRODUCT</li>
+                <li>SOLUTION</li>
+                <li>SHOWROOM</li>
+            </ul>
         </div>
     </header>
     <div id="main_content">
@@ -126,7 +139,7 @@
             <div id="modem">
                 <div class="modem_img">
                     <div class="modern_img">
-                        <img src="./img/중간배너/modern02.jpg" alt="모던" class="image">
+                        <img src="./img/medium_banner/modern02.jpeg" alt="모던" class="image">
                         <div class="textbox">
                             <div class="box_text">
                                 원룸부터 고급 주택까지 다양한 형태의 주거공간에 모두 잘 어울리는 모던 스타일을 만나 보세요.
@@ -168,23 +181,19 @@
             <div id="img_back">
                 <div class="three_img">
                     <div class="k_img">
-                        <!-- <div class="row">
-                            <img id="pro_k_large" src="./img/상품카테고리/pro_kitchen.jpg" alt="" class="img-respons"/>
-                            <img id="pro_k_small" src="./img/상품카테고리/pro_kitchen_s .jpg" alt="" class="img-reponsive"/>
-                        </div> -->
-                        <img src="./img/상품카테고리/pro_kitchen.jpg" alt="주방">
+                        <img src="./img/product_ca/pro_kitchen.jpg" alt="주방">
                     </div>
                     <div class="two_img">
                         <div class="table_img">
-                            <img src="./img/상품카테고리/pro_table.jpg" alt="테이블">
+                            <img src="./img/product_ca/pro_table.jpg" alt="테이블">
                         </div>
                         <div class="chair_img">
-                            <img src="./img/상품카테고리/pro_chair.jpg" alt="의자">
+                            <img src="./img/product_ca/pro_chair.jpg" alt="의자">
                         </div>
                     </div>
                 </div>
                 <div class="light_img">
-                    <img src="./img/상품카테고리/pro_lighting.jpg" alt="조명">
+                    <img src="./img/product_ca/pro_lighting.jpg" alt="조명">
                 </div>
             </div>
         </section>
@@ -211,7 +220,7 @@
         <div class="footer_container">
             <div class="com">
                 <div class="footer_logo">
-                    <a href="#"><img src="./img/logo.jpg" alt="로고" class="img"></a>
+                    <p>L'intérieur</p>
                 </div>
                 <ul class="footer_info">
                     <li>

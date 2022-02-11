@@ -37,22 +37,22 @@
 
 
 #main_content > #main_benner .swiper-slide.slide1 {
-    background: url('../img/메인배너/main_banner01.jpg');
+    background: url('../img/main_banner_mo/main_mo_ba\ \(1\).jpg');
     background-size: cover;
     background-position:center;
 }
 #main_content > #main_benner .swiper-slide.slide2 {
-    background: url('../img/메인배너/main_banner02.jpg');
+    background: url('../img/main_banner_mo/main_mo_ba\ \(2\).jpg');
     background-size: cover;
     background-position:center;
 }
 #main_content > #main_benner .swiper-slide.slide3 {
-    background: url('../img/메인배너/main_banner03.jpg');
+    background: url('../img/main_banner_mo/main_mo_ba\ \(3\).jpg');
     background-size: cover;
     background-position:center;
 }
 #main_content > #main_benner .swiper-slide.slide4 {
-    background: url('../img/메인배너/main_banner04.jpg');
+    background: url('../img/main_banner_mo/main_mo_ba\ \(4\).jpg');
     background-size: cover;
     background-position:center;
 }
@@ -71,10 +71,11 @@
     font-size: 20px;
 }
 #main_content .in_text > a {
-    padding: 0 100px;
-    font-weight: 700;
-    margin-top: 12px;
+    font-weight: 500;
     font-size: 20px;
+    line-height: 5;
+    padding: 10px;
+
 }
 #main_content > #fore_img {
     width: 100%;
@@ -122,32 +123,32 @@
 }
 
 #main_content > #fore_img .img_background .swiper-slide.slide11 {
-    background: url('../img/중상단_4개배너/first_bath.jpg');
+    background: url('../img/six_banner/first_bath.jpg');
     background-size: cover;
     background-position:center;
 }
 #main_content > #fore_img .img_background .swiper-slide.slide21 {
-    background: url('../img/중상단_4개배너/first_bedroom.jpg');
+    background: url('../img/six_banner/first_bedroom.jpg');
     background-size: cover;
     background-position:center;
 }
 #main_content > #fore_img .img_background .swiper-slide.slide31 {
-    background: url('../img/중상단_4개배너/first_kitchen.jpg');
+    background: url('../img/six_banner/first_dress.jpg');
     background-size: cover;
     background-position:center;
 }
 #main_content > #fore_img .img_background .swiper-slide.slide41 {
-    background: url('../img/중상단_4개배너/first_living.jpg');
+    background: url('../img/six_banner/first_kitchen.jpg');
     background-size: cover;
     background-position:center;
 }
 #main_content > #fore_img .img_background .swiper-slide.slide51 {
-    background: url('../img/중상단_4개배너/first_dress.jpg');
+    background: url('../img/six_banner/first_living.jpg');
     background-size: cover;
     background-position:center;
 }
 #main_content > #fore_img .img_background .swiper-slide.slide61 {
-    background: url('../img/중상단_4개배너/first_study.jpg');
+    background: url('../img/six_banner/first_study.jpg');
     background-size: cover;
     background-position:center;
 }
@@ -254,7 +255,7 @@
 }
 #main_content > #m_swiper {
     width: 100%;
-    height: 900px;
+    height: 930px;
 }
 #main_content > #m_swiper >#product_text {
     width: 100%;
@@ -266,7 +267,7 @@
 }
 #main_content > #m_swiper > #icon_back {
     width: 100%;
-    height: 150px;
+    height: 180px;
     margin: 0;
 }
 
@@ -550,22 +551,22 @@
     align-items: center;
 }
 #main_content > #show > #show_img .swiper-slide.slide01 {
-    background: url('../img/쇼룸/showroom01.jpg');
+    background: url('../img/showroom_mo/show_mo.jpg');
     background-size: cover;
     background-position:center;
 }
 #main_content > #show > #show_img .swiper-slide.slide02 {
-    background: url('../img/쇼룸/showroom02.jpg');
+    background: url('../img/showroom_mo/show_mo1.jpg');
     background-size: cover;
     background-position:center;
 }
 #main_content > #show > #show_img .swiper-slide.slide03 {
-    background: url('../img/쇼룸/showroom03.jpg');
+    background: url('../img/showroom_mo/show_mo2.jpg');
     background-size: cover;
     background-position:center;
 }
 #main_content > #show > #show_img .swiper-slide.slide04 {
-    background: url('../img/쇼룸/showroom04.jpg');
+    background: url('../img/showroom_mo/show_mo3.jpg');
     background-size: cover;
     background-position:center;
 }
@@ -601,6 +602,20 @@
 #main_content > #m_swiper > #img_back > .light_img {
     display: none;
 }
+#main_content .in_text {
+    width: 100%;
+    height: 100px;
+    background-color: white;
+}
+
+#main_content .in_text .txt_01 {
+    margin: 5px;
+}
+#main_content .in_text > p {
+    display: none;
+}
+
+
 
 
 /* 테블릿: 767px 이상*/
@@ -628,9 +643,78 @@
     #main_content > #m_swiper > #img_back .three_img .k_img {
         height: 350px;
     }
+    #main_content .in_text {
+        width: 100%;
+        height: 150px;
+        background-color: white;
+    }
+    
+    #main_content .in_text .txt_01 {
+        margin: 80px;
+    }
+    #main_content .in_text > p {
+        display: block;
+    }
+    #main_content .in_text > a {
+        padding: 0 100px;
+        font-weight: 700;
+        margin-top: 12px;
+        font-size: 20px;
+        line-height: 2;
+    }
+    #main_content > #main_benner .swiper-slide.slide1 {
+        background: url('../img/main_banner/main_banner01.jpg');
+        background-size: cover;
+        background-position:center;
+    }
+    #main_content > #main_benner .swiper-slide.slide2 {
+        background: url('../img/main_banner/main_banner02.jpg');
+        background-size: cover;
+        background-position:center;
+    }
+    #main_content > #main_benner .swiper-slide.slide3 {
+        background: url('../img/main_banner/main_banner03.jpg');
+        background-size: cover;
+        background-position:center;
+    }
+    #main_content > #main_benner .swiper-slide.slide4 {
+        background: url('../img/main_banner/main_banner04.jpg');
+        background-size: cover;
+        background-position:center;
+    }
+
+    #main_content > #show > #show_img .swiper-slide.slide01 {
+        background: url('../img/showroom/showroom01.jpg');
+        background-size: cover;
+        background-position:center;
+    }
+    #main_content > #show > #show_img .swiper-slide.slide02 {
+        background: url('../img/showroom/showroom02.jpg');
+        background-size: cover;
+        background-position:center;
+    }
+    #main_content > #show > #show_img .swiper-slide.slide03 {
+        background: url('../img/showroom/showroom03.jpg');
+        background-size: cover;
+        background-position:center;
+    }
+    #main_content > #show > #show_img .swiper-slide.slide04 {
+        background: url('../img/showroom/showroom04.jpg');
+        background-size: cover;
+        background-position:center;
+    }
 }
 
 /* pc: 1024px 이상 */
 @media all and (min-width:1024px){ 
+    #main_content .in_text {
+        width: 100%;
+        height: 150px;
+        background-color: white;
+    }
+    
+    #main_content .in_text .txt_01 {
+        margin: 80px;
+    }
 
 }
