@@ -14,4 +14,11 @@ $(".close").on({
     }
 });
 
+// $(window).resize(function() {
+//     var width = $(window).width();
+
+//     if(width < 767) {
+//         $(".mobile_menu").show();
+//     }
+// });
 

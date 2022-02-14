@@ -23,13 +23,12 @@ ul { list-style: none; }
     position: fixed;
     width: 100%;
     z-index: 2;
-    box-shadow : 0 5px 0 0 ;
+    box-shadow : 0 2px 2px rgb(0 0 0 / 15%)
 }
 #main_header .container {
     margin: 0 auto;
     height: 80px;
     display: flex;
-    box-shadow : 0 5px 0 0 ;
 }
 #main_header .logo {
     width: 100%;
@@ -61,7 +60,7 @@ ul { list-style: none; }
     right: 10px;
 }
 
-#main_header .trigger .close {
+#main_header .trigger .hamburger {
     display: none;
 }
 #main_header .nav .gnb .gnb_sub {
@@ -122,17 +121,19 @@ ul { list-style: none; }
 #main_footer {
     margin: 0;
     padding: 0;
+    position: relative;
+    top: 80px;
 }
 #main_footer .footer_container {
     display: flex;
     max-width: 1440px;
     height: 300px;
     margin: 0 auto;
+    background-color: black;
 }
 #main_footer .com {
     width: 70%;
     height: 100%;
-    background-color: black;
     color: white;
 }
 
@@ -169,7 +170,6 @@ ul { list-style: none; }
     width: 30%;
     height: 100%;
     color: white;
-    background-color: black;
 }
 #main_footer .number .footer_cs {
     display: flex;
@@ -215,10 +215,6 @@ ul { list-style: none; }
 #main_header .main_icon {
     display: none;
 }
-
-
-
-
 
 /* 테블릿: 767px 이상*/
 @media all and (min-width:767px){
@@ -272,7 +268,7 @@ ul { list-style: none; }
         letter-spacing: 2.0px;
     }
     #main_footer .footer_container {
-        height: 220px;
+        height: 230px;
 
     }
 }

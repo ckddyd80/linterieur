@@ -5,6 +5,8 @@
 #main_content {
     margin: 0;
     padding: 0;
+    position: relative;
+    top: 80px;
 }
 #main_content > #main_benner {
     height: 800px;
