@@ -64,10 +64,10 @@
 }
 
 #main_content .in_text .txt_01 {
-    margin: 80px;
+    margin: 20px;
 }
 #main_content .in_text > p {
-    padding: 0 100px;
+    padding: 0 20px;
     font-size: 20px;
 }
 #main_content .in_text > a {

@@ -126,7 +126,7 @@ ul { list-style: none; }
 #main_footer .footer_container {
     display: flex;
     max-width: 1440px;
-    height: 200px;
+    height: 300px;
     margin: 0 auto;
 }
 #main_footer .com {
@@ -139,13 +139,31 @@ ul { list-style: none; }
 #main_footer .footer_logo {
     font-size: 32px;
     font-weight: 700;
+    margin-top: 20px;
+    padding-left: 16px;
+}
+#main_footer .footer_info {
+    font-size: 80%;
+    margin-top: 10px;
+}
+#main_footer .footer_info > li {
+    line-height: 20px;
+    padding-left: 16px;
 }
 #main_footer .com .footer_sns {
     display: flex;
-    font-size: 40px;
+    font-size: 36px;
+    margin-top: 5px;
+}
+#main_footer .footer_copy {
+    margin-top: 5px;
+    font-size: 100%;
+    padding-left: 16px;
+
 }
 #main_footer .com .footer_sns a {
-    padding: 30px 5px;
+    padding: 30px 8px;
+    padding-left: 16px;
 }
 #main_footer .number {
     width: 30%;
@@ -153,7 +171,38 @@ ul { list-style: none; }
     color: white;
     background-color: black;
 }
-
+#main_footer .number .footer_cs {
+    display: flex;
+    margin-top: 40px;
+}
+#main_footer .number .footer_cs .footer_cs_inner {
+    float: left;
+    width: 50%;
+}
+/* #main_footer .number .footer_cs .footer_cs_name {
+    font-size: 80%;
+    font-weight: bold;
+}
+#main_footer .number .footer_cs .footer_cs_tel{
+    font-size: 80%;
+    letter-spacing: 2.0px;
+} */
+#main_footer .number .footer_cs .footer_cs_inner {
+    float: left;
+    width: 50%;
+}
+#main_footer .number .footer_cs_tip {
+    font-size: 92%;
+}
+#main_footer .number > a {
+    font-size: 92%;
+}
+#main_footer .number .footer_menu {
+}
+#main_footer .number .footer_menu > li {
+    line-height: 1.2rem;
+    font-size: 90%;
+}
 #main_footer .com {
     width: 100%;
 }
@@ -166,6 +215,7 @@ ul { list-style: none; }
 #main_header .main_icon {
     display: none;
 }
+
 
 
 
@@ -212,6 +262,18 @@ ul { list-style: none; }
     }
     #main_header .mobile_menu ul {
         display: none;
+    }
+    #main_footer .number .footer_cs .footer_cs_name {
+        font-size: 80%;
+        font-weight: bold;
+    }
+    #main_footer .number .footer_cs .footer_cs_tel{
+        font-size: 80%;
+        letter-spacing: 2.0px;
+    }
+    #main_footer .footer_container {
+        height: 220px;
+
     }
 }
 
