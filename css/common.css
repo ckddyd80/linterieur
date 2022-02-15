@@ -47,13 +47,14 @@ ul { list-style: none; }
 
 #main_header .nav .gnb {
     display: flex;
-    justify-content: space-around;
-    margin: 0 150px;
+    /* justify-content: space-around; */
 }
 #main_header .nav .gnb > li {
     padding: 30px 20px;
-    display: flex;
+    /* display: flex; */
     font-weight: 500;
+    text-align: center;
+    width: 25%;
 }
 #main_header .trigger {
     padding-top: 28px;
@@ -293,12 +294,28 @@ ul { list-style: none; }
     font-size: 90%;
     letter-spacing: 2.0px;
 }
-}
-/* 테블릿: 800px 이상*/
-@media all and (min-width:800px){
+
 #main_header .nav .gnb .gnb_sub {
     padding: 0 10px;
 }
+
+#main_header .nav .gnb {
+    /* justify-content: space-around; */
+    margin: 0;
+}
+
+#main_header .nav .gnb > li {
+    padding: 30px 0;
+}
+
+}
+/* 테블릿: 800px 이상*/
+@media all and (min-width:800px){
+
+    #main_header .nav .gnb {
+        /* justify-content: space-around; */
+        margin: 0 5%;
+    }
 }
 /* 테블릿: 860px 이상*/
 @media all and (min-width:860px){
@@ -323,6 +340,12 @@ ul { list-style: none; }
 #main_footer .footer_info {
     font-size: 100%;
 }
+
+#main_header .nav .gnb {
+    /* justify-content: space-around; */
+    margin: 0 10%;
+}
+
 }
 /* pc: 1100px 이상 */
 @media all and (min-width:1100px){ 
