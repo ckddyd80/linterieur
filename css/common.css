@@ -53,6 +53,7 @@ ul { list-style: none; }
 #main_header .nav .gnb > li {
     padding: 30px 20px;
     display: flex;
+    font-weight: 500;
 }
 #main_header .trigger {
     padding-top: 28px;
@@ -144,12 +145,19 @@ ul { list-style: none; }
     padding-left: 16px;
 }
 #main_footer .footer_info {
-    font-size: 80%;
+    font-size: 75%;
     margin-top: 10px;
 }
 #main_footer .footer_info > li {
     line-height: 20px;
     padding-left: 16px;
+}
+.sns_link {
+    background-color: transparent;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    font-size: 2.5rem;
 }
 #main_footer .com .footer_sns {
     display: flex;
@@ -160,10 +168,9 @@ ul { list-style: none; }
     margin-top: 5px;
     font-size: 100%;
     padding-left: 16px;
-
 }
-#main_footer .com .footer_sns a {
-    padding: 30px 8px;
+#main_footer .com .footer_sns button {
+    padding: 5px 0;
     padding-left: 16px;
 }
 #main_footer .number {
@@ -179,20 +186,20 @@ ul { list-style: none; }
     float: left;
     width: 50%;
 }
-/* #main_footer .number .footer_cs .footer_cs_name {
+#main_footer .number .footer_cs .footer_cs_name {
     font-size: 80%;
     font-weight: bold;
 }
 #main_footer .number .footer_cs .footer_cs_tel{
     font-size: 80%;
     letter-spacing: 2.0px;
-} */
+}
 #main_footer .number .footer_cs .footer_cs_inner {
     float: left;
     width: 50%;
 }
 #main_footer .number .footer_cs_tip {
-    font-size: 92%;
+    font-size:76%;
 }
 #main_footer .number > a {
     font-size: 92%;
@@ -201,7 +208,7 @@ ul { list-style: none; }
 }
 #main_footer .number .footer_menu > li {
     line-height: 1.2rem;
-    font-size: 90%;
+    font-size: 80%;
 }
 #main_footer .com {
     width: 100%;
@@ -216,66 +223,146 @@ ul { list-style: none; }
     display: none;
 }
 
-/* 테블릿: 767px 이상*/
-@media all and (min-width:767px){
-    #main_header .container {
-        max-width: 1440px;
-    }
-
-    #main_footer .com {
-        width: 70%;
-    }
-    #main_footer .number {
-        display: block;
-    }
-    #main_header .nav {
-        display: block;
-    }
-    #main_header .main_icon {
-        display: block;
-        position: relative;
-    }
-    #main_header .main_icon > div {
-        position: absolute;
-        top: 20px;
-    }
-
-    #main_header .nav .gnb .gnb_sub {
-        padding: 0 70px;
-    }
-
-    #main_header .logo {
-        width: 200px;
-        position: static;
-        height: 100%;
-        padding-top: 0;
-    }
-    #main_header .trigger {
-        display: none;
-    }
-    #main_header .mobile_menu {
-        display: none;
-    }
-    #main_header .mobile_menu ul {
-        display: none;
-    }
-    #main_footer .number .footer_cs .footer_cs_name {
-        font-size: 80%;
-        font-weight: bold;
-    }
-    #main_footer .number .footer_cs .footer_cs_tel{
-        font-size: 80%;
-        letter-spacing: 2.0px;
-    }
-    #main_footer .footer_container {
-        height: 230px;
-
+/* 테블릿: 557px 이상*/
+@media all and (min-width:557px){
+#main_footer .footer_container {
+    height: 220px;
     }
 }
 
+/* 테블릿: 767px 이상*/
+@media all and (min-width:767px){
+#main_header .container {
+    max-width: 1440px;
+}
+#main_footer .com {
+    width: 70%;
+}
+#main_footer .number {
+    display: block;
+}
+#main_header .nav {
+    display: block;
+}
+#main_header .main_icon {
+    display: block;
+    position: relative;
+}
+#main_header .main_icon > div {
+    position: absolute;
+    top: 20px;
+}
+
+#main_header .nav .gnb .gnb_sub {
+}
+
+#main_header .logo {
+    width: 200px;
+    position: static;
+    height: 100%;
+    padding-top: 0;
+}
+#main_header .trigger {
+    display: none;
+}
+#main_header .mobile_menu {
+    display: none;
+}
+#main_header .mobile_menu ul {
+    display: none;
+}
+#main_footer .number .footer_cs .footer_cs_name {
+    font-size: 80%;
+    font-weight: bold;
+}
+#main_footer .number .footer_cs .footer_cs_tel{
+    font-size: 80%;
+    letter-spacing: 2.0px;
+}
+#main_footer .footer_container {
+    height: 230px;
+}
+#main_footer .number .footer_cs_tip {
+    font-size:90%;
+}
+#main_footer .number .footer_cs .footer_cs_name {
+    font-size: 90%;
+    font-weight: bold;
+}
+#main_footer .number .footer_cs .footer_cs_tel{
+    font-size: 90%;
+    letter-spacing: 2.0px;
+}
+}
+/* 테블릿: 800px 이상*/
+@media all and (min-width:800px){
+#main_header .nav .gnb .gnb_sub {
+    padding: 0 10px;
+}
+}
+/* 테블릿: 860px 이상*/
+@media all and (min-width:860px){
+#main_header .nav .gnb .gnb_sub {
+    padding: 0 40px;
+}
+}
 /* pc: 1024px 이상 */
 @media all and (min-width:1024px){ 
-    #main_header .nav .gnb .gnb_sub {
-        padding: 0 260px;
-    }
+#main_header .nav .gnb .gnb_sub {
+    padding: 0 120px;
+}
+#main_footer .number .footer_cs .footer_cs_name {
+    font-size: 100%;
+}
+#main_footer .number .footer_cs .footer_cs_tel{
+    font-size: 100%;
+}
+#main_footer .number .footer_menu > li {
+    font-size: 100%;
+}
+#main_footer .footer_info {
+    font-size: 100%;
+}
+}
+/* pc: 1100px 이상 */
+@media all and (min-width:1100px){ 
+#main_header .nav .gnb .gnb_sub {
+    padding: 0 140px;
+}
+}
+/* pc: 1200px 이상 */
+@media all and (min-width:1200px){ 
+#main_header .nav .gnb .gnb_sub {
+    padding: 0 150px;
+}
+}
+/* pc: 1300px 이상 */
+@media all and (min-width:1300px){ 
+#main_header .nav .gnb .gnb_sub {
+    padding: 0 160px;
+}
+}
+/* pc: 1400px 이상 */
+@media all and (min-width:1400px){ 
+#main_header .nav .gnb .gnb_sub {
+    padding: 0 180px;
+}
+}
+/* pc: 1500px 이상 */
+@media all and (min-width:1500px){ 
+#main_header .nav .gnb .gnb_sub {
+    padding: 0 220px;
+}
+}
+/* pc: 1600px 이상 */
+@media all and (min-width:1600px){ 
+#main_header .nav .gnb .gnb_sub {
+    padding: 0 270px;
+}
+}
+/* pc: 1880px 이상 */
+@media all and (min-width:1880px){ 
+#main_header .nav .gnb .gnb_sub {
+    padding: 0 420px;
+}
 }
