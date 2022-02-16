@@ -4,3 +4,116 @@
     position: relative;
     top: 80px;
 }
+#main_content  > #main_sub_banner {
+    height: 800px;
+    position: relative;
+}
+#main_content > #main_sub_banner > img {
+    width: 100%;
+    height: 800px;
+    display: block;
+    width: 1440px;
+}
+#main_content > #main_sub_banner .textbox_sub .sub_box_text {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 14%;
+    width: 600px;
+    opacity: 0;
+    transition: .5s ease;
+}
+#main_content > #main_sub_banner:hover .sub_box_text {
+    opacity: 0.7;
+}
+#main_content > #main_sub_banner .textbox_sub .sub_box_text {
+    color: rgb(250, 245, 245);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: absolute;
+    top: 40%;
+    left: 22%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+#main_content > #main_sub_banner .textbox_sub .sub_box_text .sub_box_text1 {
+    font-size: 26px;
+    font-weight: 800;
+    color: black;
+}
+#main_content > #main_sub_banner .textbox_sub .sub_box_text .sub_box_text2{
+    font-size: 16px;
+    font-weight: 400;
+    color: black;
+}
+#main_content > #sub_all {
+    height: 3000px;
+    background-color: aqua;
+}
+#main_content > #sub_all .sub_modern_1 {
+    height: 800px;
+    width: 100%;
+    background-color: bisque;
+    display: flex;
+}
+#main_content > #sub_all .sub_modern_1 .sub_modern_textm {
+    height: 100%;
+    width: 10%;
+    background-color: blueviolet;
+}
+#main_content > #sub_all .sub_modern_1 .sub_modern_threebox {
+    height: 50%;
+    width: 90%;
+    background-color: white;
+    display: flex;
+}
+#main_content > #sub_all .sub_modern_1 .sub_modern_text1 {
+    width: 28%;
+    background-color: brown;
+}
+#main_content > #sub_all .sub_modern_1 .sub_modern_img1 {
+    width: 28%;
+}
+#main_content > #sub_all .sub_modern_1 .sub_modern_colorback{
+    width: 44%;
+    background-color: rgb(199, 184, 97);
+}
+#main_content > #sub_all .sub_modern_1 .sub_modern_threebox2 {
+    height: 50%;
+    width: 90%;
+    /* background-color: green;
+    display: flex; */
+}
+#main_content > #sub_all .sub_modern_1 .sub_modern_threebox2 .sub_modern_twobox {
+    width: 28%;
+    display: flex;
+    height: 100%;
+}
+#main_content > #sub_all .sub_modern_1 .sub_modern_threebox2 .sub_modern_img2 {
+    height: 65%;
+    background-color: rgb(11, 136, 145);
+}
+#main_content > #sub_all .sub_modern_1 .sub_modern_threebox2 .sub_modern_clickba {
+    height: 35%;
+    background-color: deeppink;
+}
+#main_content > #sub_all .sub_modern_1 .sub_modern_threebox2 .sub_modern_tex2{
+    width: 28%;
+    background-color: cornflowerblue;
+}
+#main_content > #sub_all .sub_modern_1 .sub_modern_threebox2 .sub_modern_img3{
+    width: 44%;
+    background-color: rgb(228, 128, 34);
+}
+
+
+/* 테블릿: 767px 이상*/
+@media all and (min-width:767px){
+    section {
+        max-width: 1440px;
+        margin: 0 auto;
+}
+}
