@@ -64,6 +64,12 @@ ul { list-style: none; }
 
 #main_header .trigger .hamburger {
     display: none;
+    border: 0;
+    outline: 0;
+}
+#main_header .trigger .close {
+    border: 0;
+    outline: 0;
 }
 #main_header .nav .gnb .gnb_sub {
     display: none;
