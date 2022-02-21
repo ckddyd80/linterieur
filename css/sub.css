@@ -55,9 +55,12 @@
 
 #main_content > #sub_all .sub_all_nav {
 /* position: relative; */
+    position: sticky;
+    top: 80px;
+    z-index: 2;
 }
 #main_content > #sub_all .sub_all_nav .sub_all_menu {
-    position: fixed
+    /* position: fixed */
 }
 #main_content > #sub_all .sub_all_nav .sub_all_menu li {
     float: right;
