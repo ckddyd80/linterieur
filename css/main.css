@@ -613,7 +613,7 @@
 #main_content .in_text .txt_01 {
     margin: 5px;
 }
-#main_content .in_text > p {
+#main_content .in_text .txt_01 > p{
     display: none;
 }
 
@@ -652,15 +652,19 @@
     }
     
     #main_content .in_text .txt_01 {
-        margin: 80px;
+        margin: 20px;
+        padding-top: 10px;
     }
     #main_content .in_text > p {
+        display: block;
+    }
+    #main_content .in_text .txt_01 > p {
         display: block;
     }
     #main_content .in_text > a {
         padding: 0 20px;
         font-weight: 700;
-        margin-top: 12px;
+        margin-top: 8px;
         font-size: 20px;
         line-height: 2;
     }
@@ -716,7 +720,7 @@
     }
     
     #main_content .in_text .txt_01 {
-        margin: 80px;
+        margin: 20px;
     }
 
 }
